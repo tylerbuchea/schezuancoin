@@ -1,9 +1,9 @@
-// Copyright (c) 2016 The Bitcoin Core developers
+// Copyright (c) 2016 The Schezuancoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CONSENSUS_VERSIONBITS
-#define BITCOIN_CONSENSUS_VERSIONBITS
+#ifndef SCHEZUANCOIN_CONSENSUS_VERSIONBITS
+#define SCHEZUANCOIN_CONSENSUS_VERSIONBITS
 
 #include "chain.h"
 #include <map>

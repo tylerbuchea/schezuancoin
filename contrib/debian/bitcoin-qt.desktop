@@ -1,13 +1,13 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Bitcoin Core
-Comment=Connect to the Bitcoin P2P Network
-Comment[de]=Verbinde mit dem Bitcoin peer-to-peer Netzwerk
-Comment[fr]=Bitcoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Bitcoin, eşten eşe kriptografik sanal para birimi
-Exec=bitcoin-qt %u
+Name=Schezuancoin Core
+Comment=Connect to the Schezuancoin P2P Network
+Comment[de]=Verbinde mit dem Schezuancoin peer-to-peer Netzwerk
+Comment[fr]=Schezuancoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Schezuancoin, eşten eşe kriptografik sanal para birimi
+Exec=schezuancoin-qt %u
 Terminal=false
 Type=Application
-Icon=bitcoin128
-MimeType=x-scheme-handler/bitcoin;
+Icon=schezuancoin128
+MimeType=x-scheme-handler/schezuancoin;
 Categories=Office;Finance;

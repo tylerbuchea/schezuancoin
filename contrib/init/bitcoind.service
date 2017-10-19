@@ -1,15 +1,15 @@
 [Unit]
-Description=Bitcoin's distributed currency daemon
+Description=Schezuancoin's distributed currency daemon
 After=network.target
 
 [Service]
-User=bitcoin
-Group=bitcoin
+User=schezuancoin
+Group=schezuancoin
 
 Type=forking
-PIDFile=/var/lib/bitcoind/bitcoind.pid
-ExecStart=/usr/bin/bitcoind -daemon -pid=/var/lib/bitcoind/bitcoind.pid \
--conf=/etc/bitcoin/bitcoin.conf -datadir=/var/lib/bitcoind -disablewallet
+PIDFile=/var/lib/schezuancoind/schezuancoind.pid
+ExecStart=/usr/bin/schezuancoind -daemon -pid=/var/lib/schezuancoind/schezuancoind.pid \
+-conf=/etc/schezuancoin/schezuancoin.conf -datadir=/var/lib/schezuancoind -disablewallet
 
 Restart=always
 PrivateTmp=true

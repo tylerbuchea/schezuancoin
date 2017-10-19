@@ -1,9 +1,9 @@
-// Copyright (c) 2009-2015 The Bitcoin Core developers
+// Copyright (c) 2009-2015 The Schezuancoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_TEST_PAYMENTSERVERTESTS_H
-#define BITCOIN_QT_TEST_PAYMENTSERVERTESTS_H
+#ifndef SCHEZUANCOIN_QT_TEST_PAYMENTSERVERTESTS_H
+#define SCHEZUANCOIN_QT_TEST_PAYMENTSERVERTESTS_H
 
 #include "../paymentserver.h"
 
@@ -32,4 +32,4 @@ public:
     SendCoinsRecipient recipient;
 };
 
-#endif // BITCOIN_QT_TEST_PAYMENTSERVERTESTS_H
+#endif // SCHEZUANCOIN_QT_TEST_PAYMENTSERVERTESTS_H

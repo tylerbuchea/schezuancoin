@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2015 The Bitcoin Core developers
+// Copyright (c) 2009-2015 The Schezuancoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,8 +11,8 @@
  * - E-mail usually won't line-break if there's no punctuation to break at.
  * - Double-clicking selects the whole string as one word if it's all alphanumeric.
  */
-#ifndef BITCOIN_BASE58_H
-#define BITCOIN_BASE58_H
+#ifndef SCHEZUANCOIN_BASE58_H
+#define SCHEZUANCOIN_BASE58_H
 
 #include "chainparams.h"
 #include "key.h"
@@ -97,7 +97,7 @@ public:
 /**
  * A base58-encoded secret key
  */
-class CBitcoinSecret : public CBase58Data
+class CSchezuancoinSecret : public CBase58Data
 {
 public:
     void SetKey(const CKey& vchSecret);
@@ -106,11 +106,11 @@ public:
     bool SetString(const char* pszSecret);
     bool SetString(const std::string& strSecret);
 
-    CBitcoinSecret(const CKey& vchSecret) { SetKey(vchSecret); }
-    CBitcoinSecret() {}
+    CSchezuancoinSecret(const CKey& vchSecret) { SetKey(vchSecret); }
+    CSchezuancoinSecret() {}
 };
 
-template<typename K, int Size, CChainParams::Base58Type Type> class CBitcoinExtKeyBase : public CBase58Data
+template<typename K, int Size, CChainParams::Base58Type Type> class CSchezuancoinExtKeyBase : public CBase58Data
 {
 public:
     void SetKey(const K &key) {
@@ -128,23 +128,23 @@ public:
         return ret;
     }
 
-    CBitcoinExtKeyBase(const K &key) {
+    CSchezuancoinExtKeyBase(const K &key) {
         SetKey(key);
     }
 
-    CBitcoinExtKeyBase(const std::string& strBase58c) {
+    CSchezuancoinExtKeyBase(const std::string& strBase58c) {
         SetString(strBase58c.c_str(), Params().Base58Prefix(Type).size());
     }
 
-    CBitcoinExtKeyBase() {}
+    CSchezuancoinExtKeyBase() {}
 };
 
-typedef CBitcoinExtKeyBase<CExtKey, BIP32_EXTKEY_SIZE, CChainParams::EXT_SECRET_KEY> CBitcoinExtKey;
-typedef CBitcoinExtKeyBase<CExtPubKey, BIP32_EXTKEY_SIZE, CChainParams::EXT_PUBLIC_KEY> CBitcoinExtPubKey;
+typedef CSchezuancoinExtKeyBase<CExtKey, BIP32_EXTKEY_SIZE, CChainParams::EXT_SECRET_KEY> CSchezuancoinExtKey;
+typedef CSchezuancoinExtKeyBase<CExtPubKey, BIP32_EXTKEY_SIZE, CChainParams::EXT_PUBLIC_KEY> CSchezuancoinExtPubKey;
 
 std::string EncodeDestination(const CTxDestination& dest);
 CTxDestination DecodeDestination(const std::string& str);
 bool IsValidDestinationString(const std::string& str);
 bool IsValidDestinationString(const std::string& str, const CChainParams& params);
 
-#endif // BITCOIN_BASE58_H
+#endif // SCHEZUANCOIN_BASE58_H

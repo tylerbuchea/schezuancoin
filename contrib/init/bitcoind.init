@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  bitcoind The bitcoin core server.
+#  schezuancoind The schezuancoin core server.
 #
 #
 # chkconfig: 345 80 20
-# description: bitcoind
-# processname: bitcoind
+# description: schezuancoind
+# processname: schezuancoind
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/bitcoind, see below
-if [ -f /etc/sysconfig/bitcoind ]; then
-        . /etc/sysconfig/bitcoind
+# you can override defaults in /etc/sysconfig/schezuancoind, see below
+if [ -f /etc/sysconfig/schezuancoind ]; then
+        . /etc/sysconfig/schezuancoind
 fi
 
 RETVAL=0
 
-prog=bitcoind
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/bitcoind
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/bitcoind}
+prog=schezuancoind
+# you can override the lockfile via SCHEZUANCOIND_LOCKFILE in /etc/sysconfig/schezuancoind
+lockfile=${SCHEZUANCOIND_LOCKFILE-/var/lock/subsys/schezuancoind}
 
-# bitcoind defaults to /usr/bin/bitcoind, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/bitcoind}
+# schezuancoind defaults to /usr/bin/schezuancoind, override with SCHEZUANCOIND_BIN
+schezuancoind=${SCHEZUANCOIND_BIN-/usr/bin/schezuancoind}
 
-# bitcoind opts default to -disablewallet, override with BITCOIND_OPTS
-bitcoind_opts=${BITCOIND_OPTS--disablewallet}
+# schezuancoind opts default to -disablewallet, override with SCHEZUANCOIND_OPTS
+schezuancoind_opts=${SCHEZUANCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $bitcoind $bitcoind_opts
+    daemon $DAEMONOPTS $schezuancoind $schezuancoind_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2016 The Bitcoin Core developers
+// Copyright (c) 2011-2016 The Schezuancoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_TRANSACTIONRECORD_H
-#define BITCOIN_QT_TRANSACTIONRECORD_H
+#ifndef SCHEZUANCOIN_QT_TRANSACTIONRECORD_H
+#define SCHEZUANCOIN_QT_TRANSACTIONRECORD_H
 
 #include "amount.h"
 #include "uint256.h"
@@ -143,4 +143,4 @@ public:
     bool statusUpdateNeeded() const;
 };
 
-#endif // BITCOIN_QT_TRANSACTIONRECORD_H
+#endif // SCHEZUANCOIN_QT_TRANSACTIONRECORD_H

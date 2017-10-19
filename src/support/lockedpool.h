@@ -1,9 +1,9 @@
-// Copyright (c) 2016 The Bitcoin Core developers
+// Copyright (c) 2016 The Schezuancoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_SUPPORT_LOCKEDPOOL_H
-#define BITCOIN_SUPPORT_LOCKEDPOOL_H
+#ifndef SCHEZUANCOIN_SUPPORT_LOCKEDPOOL_H
+#define SCHEZUANCOIN_SUPPORT_LOCKEDPOOL_H
 
 #include <stdint.h>
 #include <list>
@@ -228,4 +228,4 @@ private:
     static std::once_flag init_flag;
 };
 
-#endif // BITCOIN_SUPPORT_LOCKEDPOOL_H
+#endif // SCHEZUANCOIN_SUPPORT_LOCKEDPOOL_H

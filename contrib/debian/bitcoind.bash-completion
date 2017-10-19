@@ -1,2 +1,2 @@
-contrib/bitcoind.bash-completion	bitcoind
-contrib/bitcoin-cli.bash-completion	bitcoin-cli
+contrib/schezuancoind.bash-completion	schezuancoind
+contrib/schezuancoin-cli.bash-completion	schezuancoin-cli
